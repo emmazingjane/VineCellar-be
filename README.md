@@ -6,7 +6,7 @@ MongoDB, Express, React, Node.js
 
 ## Installation
 
-To download the back-end code, run in your terminal: "git clone https://github.com/emmazingjane/VineCellar-be.git"
+To download the back-enddd code, run in your terminal: "git clone https://github.com/emmazingjane/VineCellar-be.git"
 
 cd into your directory and Run "npm install"
 
