@@ -1,0 +1,24 @@
+{
+  "name": "vinecellarbe",
+  "version": "1.0.0",
+  "description": "An app that lets you track all of the wineries in Napa that you've previously visited or wish to visit in the near future. You can also rate the wineries, so you can remind yourself to come back or to never return again.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmazingjane/VineCellar-be.git"
+  },
+  "author": "Stacie Fraser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmazingjane/VineCellar-be/issues"
+  },
+  "homepage": "https://github.com/emmazingjane/VineCellar-be#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.5"
+  }
+}
