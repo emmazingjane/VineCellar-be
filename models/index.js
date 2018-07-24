@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/3090');
+mongoose.connect('mongodb://localhost/3001');
 
 const UserModel = require('./User');
 const WineryModel = require('./Winery');
