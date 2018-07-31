@@ -12,7 +12,7 @@ function index(req, res){
 
 function show(req, res){
     console.log('User Show: GET one User');
-    User.findById(req.params.user_id, function(err, foundUser){
+    User.findById(req.params.id, function(err, foundUser){
         if(err){
             res.send('show err: ', err);
         }
@@ -22,7 +22,7 @@ function show(req, res){
 
 function update(req, res){
     console.log('Updating a user')
-    User.findByIdAndUpdate(req.params.user_id, function(err, updatedUser){
+    User.findByIdAndUpdate(req.params._id, function(err, updatedUser){
         if(err){
             res.send('update err: ', err);
         }else{
@@ -38,7 +38,7 @@ function update(req, res){
 
 function destroy(req, res){
     console.log('deleting a user');
-    User.findByIdAndRemove(req.params.user_id, function(err, deleteUser){
+    User.findByIdAndRemove(req.params.id, function(err, deleteUser){
         if (err){
             console.log('delete user err:', err);
             res.send("Error deleting User.");
