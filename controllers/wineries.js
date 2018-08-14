@@ -14,7 +14,7 @@ function create(req, res){
     console.log("Winery Creation in Process");
     Winery.create(req.body, function(err, newWinery){
         if(err){
-            res.send('error with creation ', err);
+            res.send(err);
         } else{
            res.json(newWinery);
         }
@@ -63,8 +63,8 @@ function destroy(req, res){
 }
 
 module.exports={
-    create: create,
     index: index,
+    create: create,
     show: show,
     update: update,
     destroy: destroy

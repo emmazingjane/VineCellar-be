@@ -8,8 +8,11 @@ const WinerySchema = new Schema({
     website: String,
     your_rating: String,
     photo: String,
-    tasting_info: [String],
+    tasting_info: [{String}],
     wiine_list: [String],
-    reservation: boolean,
+    reservation: Boolean,
 
   });
+
+
+module.exports = mongoose.model('Winery', WinerySchema);
