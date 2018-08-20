@@ -1,4 +1,7 @@
 const Winery = require('./models/Winery');
+const axios = require("axios");
+
+let url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=wineries+in+Napa&key=AIzaSyBGI6Ox0eZj7g1GL7FhO3ekGzYz02kqZAs"
 
 let wineryList = [
     { name:"Stag's Leap",
@@ -22,3 +25,12 @@ Winery.remove({}, function(err, removedWinery){
 
 
 
+// axios.get(`${url}`)
+// .then((res)=>{
+//     console.log('getting google data ', res.data)
+    
+//         user: res.data,
+       
+    
+
+// })

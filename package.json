@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/emmazingjane/VineCellar-be#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcrypt": "^3.0.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
